@@ -1,0 +1,70 @@
+:root{
+    --relleno-habilidades:0%;
+}
+
+.relleno--10::after{
+    --relleno-habilidades: 10%
+}
+.relleno--15::after{
+    --relleno-habilidades: 15%
+}
+.relleno--20::after{
+    --relleno-habilidades: 20%
+}
+.relleno--25::after{
+    --relleno-habilidades: 25%
+}
+.relleno--30::after{
+    --relleno-habilidades: 30%
+}
+.relleno--35::after{
+    --relleno-habilidades: 35%
+}
+.relleno--40::after{
+    --relleno-habilidades: 40%
+}
+.relleno--45::after{
+    --relleno-habilidades: 45%
+}
+.relleno--50::after{
+    --relleno-habilidades: 50%
+}
+.relleno--55::after{
+    --relleno-habilidades: 55%
+}
+.relleno--60::after{
+    --relleno-habilidades: 60%
+}
+.relleno--65::after{
+    --relleno-habilidades: 65%
+}
+.relleno--70::after{
+    --relleno-habilidades: 70%
+}
+.relleno--75::after{
+    --relleno-habilidades: 75%
+}
+.relleno--80::after{
+    --relleno-habilidades: 80%
+}
+.relleno--85::after{
+    --relleno-habilidades: 85%
+}
+.relleno--90::after{
+    --relleno-habilidades: 90%
+}
+.relleno--95::after{
+    --relleno-habilidades: 95%
+}
+.relleno--100::after{
+    --relleno-habilidades: 100%
+}
+
+@keyframes habilidadesRelleno {
+    to{
+        transform: translateX(var(--relleno-habilidades));
+    }
+}
+.habilidades::after{
+    animation: habilidadesRelleno 2s ease-in-out forwards;
+}

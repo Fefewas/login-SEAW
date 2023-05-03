@@ -22,7 +22,7 @@ body {
     height: 100vh;
 }
 
-.form-register, .form-login {
+form {
     position: absolute;
     background-color: white;
     padding: 2.5rem 1.875rem 1.875rem 1.875rem;
@@ -30,12 +30,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    text-align: center;
+    width: 40%;
 }
-.form-login{
-    width: 30%;
-}
+
 
 /*ESTILOS TITULO*/
 .form-title {
@@ -49,9 +46,10 @@ body {
 }
 .form-title h1 {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: auto;
     animation: float 4s ease-in-out infinite;
+    text-align: center;
 }
 
 @keyframes float {
@@ -147,7 +145,6 @@ span.focus {
     color: rgba(244, 91, 105, 1);
 }
 
-
 /*INPUT TOP*/
 span.top {
     top: 0.5rem;
@@ -157,12 +154,18 @@ span.top {
 
 .cambio-login-register {
     font-size: .8rem;
+    text-align: center;
 }
 
 .form-check-label{
     font-size: 0.75rem;
 }
 /*ESTILOS BOTÓN*/
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btnn {
     text-decoration: none;
     padding: 1.25rem 3.125rem;
@@ -189,16 +192,13 @@ span.top {
     z-index: -1;
     transition: transform .3s, opacity .2s ease-in-out;
 }
-
 .btnn:hover {
     transform: translate(-0.4375rem, -0.4375rem);
 }
-
 .btnn:hover::after {
     transform: translate(0.3125rem, 0.3125rem);
     opacity: 0.5;
 }
-
 .btnn:hover::before {
     transform: translate(0.5rem, 0.5rem);
     opacity: 0.3;
