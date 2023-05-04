@@ -17,11 +17,6 @@ body {
 
 }
 /*ESTILOS FORMULARIO*/
-.form-contianer {
-    width: 100%;
-    height: 100vh;
-}
-
 form {
     position: absolute;
     background-color: white;
@@ -32,6 +27,15 @@ form {
     transform: translate(-50%, -50%);
     width: 40%;
 }
+.login{
+    width: 32%;
+}
+.form-contianer {
+    width: 100%;
+    height: 100vh;
+}
+
+
 
 
 /*ESTILOS TITULO*/
@@ -41,39 +45,22 @@ form {
     align-content: center;
     justify-content: center;
     padding: 1.25rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     font-size: 1.3rem;
 }
 .form-title h1 {
     position: absolute;
     width: 100%;
     height: auto;
-    animation: float 4s ease-in-out infinite;
     text-align: center;
 }
 
-@keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-1.25rem);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
-}
-
-.grid-dos-columnas {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
 
 /*ESTILOS LABEL E INPUT*/
-.contraseñas{
+.passwords{
+    margin-bottom: 10px;
+}
+.grid-2{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 5px;
@@ -89,9 +76,7 @@ form {
     display: block;
     width: 90%;
 }
-.grid-dos-columnas div label, select{
-    width: 95%;
-}
+
 i {
     width: 1.125rem;
     height: 1.125rem;
@@ -131,16 +116,13 @@ span {
     z-index: -2;
 }
 
-.confirmar_contraseña_corrección_top {
-    top: .6rem;
-}
-
-
 /*IPNUT FOCUS*/
 .text-label.focus {
     border-color: rgba(244, 91, 105, 1);
 }
-
+.samePassword{
+    border-color: #20a15d;
+}
 span.focus {
     color: rgba(244, 91, 105, 1);
 }
@@ -152,7 +134,7 @@ span.top {
     font-size: 0.75rem;
 }
 
-.cambio-login-register {
+.switch-login-register {
     font-size: .8rem;
     text-align: center;
 }
@@ -202,4 +184,8 @@ span.top {
 .btnn:hover::before {
     transform: translate(0.5rem, 0.5rem);
     opacity: 0.3;
+}
+
+.invisible{
+    display: none;
 }

@@ -1,70 +1,100 @@
 :root{
-    --relleno-habilidades:0%;
+    --fill-skills:10%;
 }
-
-.relleno--10::after{
-    --relleno-habilidades: 10%
+.strength-password{
+    display: flex;
+    align-items: flex-start;
 }
-.relleno--15::after{
-    --relleno-habilidades: 15%
+.strength,
+.strength::after{
+    display: flex;
+    background-color: #888;
+    position: relative;
+    width: 150px;
+    height: 7px;
+    border-radius: 60px;
+    overflow: hidden;
 }
-.relleno--20::after{
-    --relleno-habilidades: 20%
+.strength::after{
+    content: '';
+    left: -150px;
+    position: absolute;
 }
-.relleno--25::after{
-    --relleno-habilidades: 25%
+.strength-text{
+    margin-left: 10px;
+    color: #888;
+    font-size: 0.75rem;
 }
-.relleno--30::after{
-    --relleno-habilidades: 30%
+.fill--10::after{
+    --fill-skills: 10%
 }
-.relleno--35::after{
-    --relleno-habilidades: 35%
+.fill--15::after{
+    --fill-skills: 15%
 }
-.relleno--40::after{
-    --relleno-habilidades: 40%
+.fill--20::after{
+    --fill-skills: 20%
 }
-.relleno--45::after{
-    --relleno-habilidades: 45%
+.fill--25::after{
+    --fill-skills: 25%;
+    background-color: red;
 }
-.relleno--50::after{
-    --relleno-habilidades: 50%
+.fill--30::after{
+    --fill-skills: 30%
 }
-.relleno--55::after{
-    --relleno-habilidades: 55%
+.fill--35::after{
+    --fill-skills: 35%
 }
-.relleno--60::after{
-    --relleno-habilidades: 60%
+.fill--40::after{
+    --fill-skills: 40%;
+    background-color: red;
 }
-.relleno--65::after{
-    --relleno-habilidades: 65%
+.fill--45::after{
+    --fill-skills: 45%
 }
-.relleno--70::after{
-    --relleno-habilidades: 70%
+.fill--50::after{
+    --fill-skills: 50%
 }
-.relleno--75::after{
-    --relleno-habilidades: 75%
+.fill--55::after{
+    --fill-skills: 55%
 }
-.relleno--80::after{
-    --relleno-habilidades: 80%
+.fill--60::after{
+    --fill-skills: 60%;
+    background-color: goldenrod;
 }
-.relleno--85::after{
-    --relleno-habilidades: 85%
+.fill--65::after{
+    --fill-skills: 65%
 }
-.relleno--90::after{
-    --relleno-habilidades: 90%
+.fill--70::after{
+    --fill-skills: 70%
 }
-.relleno--95::after{
-    --relleno-habilidades: 95%
+.fill--75::after{
+    --fill-skills: 75%
 }
-.relleno--100::after{
-    --relleno-habilidades: 100%
+.fill--80::after{
+    --fill-skills: 80%
 }
-
-@keyframes habilidadesRelleno {
+.fill--85::after{
+    --fill-skills: 85%
+}
+.fill--90::after{
+    --fill-skills: 90%
+}
+.fill--95::after{
+    --fill-skills: 95%
+}
+.fill--100::after{
+    --fill-skills: 100%;
+    background-color: #20a15d;
+}
+.fill--110::after{
+    --fill-skills: 100%;
+    background-color: red;
+}
+@keyframes skillsFill {
     to{
-        transform: translateX(var(--relleno-habilidades));
+        transform: translateX(var(--fill-skills));
     }
 }
-.habilidades::after{
-    animation: habilidadesRelleno 2s ease-in-out forwards;
+.strength::after{
+    animation: skillsFill .5s ease-in-out forwards;
 }
